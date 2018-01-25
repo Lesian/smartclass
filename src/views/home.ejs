@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang = "en">
+<head>
+
+  <title>
+    SmartClass
+  </title>
+
+	<meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+
+	<script>$('.carousel').carousel();</script>
+
+	<!-- developers stylesheet !-->
+	<link rel="stylesheet" href="/static/css/homepage.css">
+
+
+</head>
+
+<body>
+
+    <div class = "row">
+      <div class = "col-lg-12">
+        <%include nav %>
+      </div>
+    </div>
+	
+    <div class = "headerBg">
+      <div class = "row">
+        <div class = "col-sm-4"></div>
+        <div class = "col-sm-4 headerWords">
+    			Strive for excellence with the right tutoring
+    		</div>
+        <div class = "col-sm-4"></div>
+    	</div>
+
+    	<div class = "row tutorSearch">
+    		<div class = "col-sm-3"></div>
+        <div class = "col-sm-6 ">
+    			<form action="" class="form">
+            <div class="form-group center">
+                <select class = 'form-control' id = 'subject' value="Subject">
+                    <option> -- Choose Subject -- </option>
+                    <option> Physics </option>
+                    <option> Mathematics </option>
+                    <option> Biology </option>
+                    <option> Chemistry </option>
+                    <option> More </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class = 'form-control' id = 'tuiton-type' value="Type">
+                    <option> -- Choose Level -- </option>
+                    <option> Primary School </option>
+                    <option> O-level </option>
+                    <option> A-level </option>
+                    <option> IB Diploma </option>
+                    <option> More </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <select class = 'form-control' id = 'subject' value="">
+                    <option> -- Choose Type-- --</option> 
+                     <option> Home tutoring </option>
+                    <option> Online tutoring </option>
+                    <option> One-on-one tutoring </option>
+                    <option> Tuition center tutoring </option>
+                    
+                    <option> More </option>
+                </select>
+            </div>
+
+            <div class = 'form-group'>
+                <input class = 'form-control' type = 'text' placeholder="Location" value = 'Location'>
+            </div>
+
+            <div class = 'form-group'>
+                <button type = 'button' class = 'btn btn-primary btn-md'> Search Tutor </button>
+            </div>
+          </form>
+  		  </div>
+        <div class = "col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class = 'container'> 
+  	  <div class = 'row tutorCategories'>
+  	    <div class = 'col-lg-2'>
+  	      <div class="dropdown show">
+  	  			<a class=dropdown-toggle" href="#" id="academicLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academic Tutors</a>
+  	  				<div class="dropdown-menu" aria-labelledby="academicLink">
+  	  					<a class="dropdown-item" href="#">Math Tutors</a>
+  	  					<a class="dropdown-item" href="#">Geography Tutors</a>
+  	  					<a class="dropdown-item" href="#">English Tutors</a>
+  	  				</div>
+  	  		</div>
+  	    </div>
+
+        <div class = 'col-lg-2'>
+          <div class="dropdown show">
+  				  <a class=dropdown-toggle" href="#" id="itLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IT Tutors</a>
+  				    <div class="dropdown-menu" aria-labelledby="itLink">
+      					<a class="dropdown-item" href="#">Web programming Tutors</a>
+      					<a class="dropdown-item" href="#">Data Science Tutors</a>
+      					<a class="dropdown-item" href="#">Machine Learning Tutors</a>
+  				    </div>
+  			  </div>
+        </div>
+
+  	    <div class = 'col-md-2'>
+  	      <div class="dropdown show">
+  	  			<a class=dropdown-toggle" href="#" id="langLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language Tutors</a>
+  	  				<div class="dropdown-menu" aria-labelledby="langLink">
+  	  					<a class="dropdown-item" href="#">Swahili Tutors</a>
+  	  					<a class="dropdown-item" href="#">English Tutors</a>
+  	  					<a class="dropdown-item" href="#">French Tutors</a>
+  	  				</div>
+  	  		</div>
+  	    </div>
+
+  	    <div class = 'col-md-2'>
+  	      <div class="dropdown show">
+  	  			<a class=dropdown-toggle" href="#" id="artLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Arts Tutors</a>
+  	  			  <div class="dropdown-menu" aria-labelledby="artLink">
+  	  					<a class="dropdown-item" href="#">Geography Tutors</a>
+  	  					<a class="dropdown-item" href="#">Music Tutors</a>
+  	  					<a class="dropdown-item" href="#">Drawing Tutors</a>
+  	  				</div>
+  	  		</div>
+  	    </div>
+
+        <div class = 'col-md-2'>
+          <div class="dropdown show">
+  			    <a class=dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+    				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    					<a class="dropdown-item" href="#">Action</a>
+    					<a class="dropdown-item" href="#">Another action</a>
+    					<a class="dropdown-item" href="#">Something else here</a>
+    				</div>
+  		    </div>
+        </div>
+
+        <div class = 'col-md-2'>
+          <div class="dropdown show">
+  			    <a class=dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
+    				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    					<a class="dropdown-item" href="#">Action</a>
+    					<a class="dropdown-item" href="#">Another action</a>
+    					<a class="dropdown-item" href="#">Something else here</a>
+    				</div>
+  		    </div>
+        </div>
+      </div>
+  	</div>
+
+	  <div class = 'container hrLine'> <hr> </div>
+
+    <div class = "container">
+		  <div class = "row studentMsg">
+  			<div class = "col-sm-2"> 
+  			</div>
+
+  			<div class = "col-sm-8 center">
+  				<p style="text-align: center">Looking for qualified and competent teachers?</p>
+          <p class = "smallPar"> You are in the right place!! </p>
+        </div>
+
+        <div class = "col-sm-2">
+  			</div>
+		  </div>
+    </div>
+
+    <div class = "container">
+      <div class = 'row procedures' >
+        <div class = 'col-sm-3 procedure'>
+          <img class = "anImage img-fluid" src="/static/images/one.png" alt="stepone" style="width:30%">
+          <div>
+            <p>Identify the area you need help</p>
+          </div>
+        </div>
+
+        <div class = 'col-sm-1 procedure'>
+          <img class = "arrows anImage  img-fluid" src="/static/images/arrow.png" alt="stepone" style="width:50px">
+        </div>
+
+        <div class = 'col-sm-3 procedure'>
+            <img class = " img-fluid anImage" src="/static/images/two.png" alt="stepone" style="width:30%">
+              <div>
+                <p>Search for a tutor right for you</p>
+              </div>
+        </div>
+
+        <div class = 'col-sm-1 procedure'>
+          <img class = "arrows img-fluid anImage" src="/static/images/arrow.png" alt="stepone" style="width:50px">
+        </div>
+
+        <div class = 'col-sm-3 procedure'>
+          <img class = "anImage img-fluid" src="/static/images/three.png" alt="stepone" style="width:30%">
+            <div>
+              <p>Start your lesson right away</p>
+            </div>
+        </div>
+      </div>
+      <div style="text-align: center">
+          <button type="button" class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+
+		<div class = "row trustUs">
+			<div class = "col-lg-6">
+				<img class = "anImage img-fluid" src = "/static/images/possible.jpg">
+			</div>
+
+			<div class = "col-lg-6">
+				<p class = 'statements'> As our customer you come first. </p>
+				<p class = 'statements'> We will work to match you with the best teachers </p>
+				<p class = 'statements'> Tutoring can be done right at your home so you don't have to move </p>
+				<p class = 'statements'> Your success is our priority </p>
+        <div id = "buttonWrapper">
+          <button type="button" class="btn btn-primary learnMore">Learn More</button>
+        </div>
+			</div>
+		</div>
+
+    <div class = 'row heading_text'>
+      <div class = 'col-lg-2'></div>
+      <div class = 'col-lg-8'>
+        <text> What people are saying about us </text>
+      </div>
+      <div class = 'col-lg-2'></div>
+    </div>
+
+    <div class = "row clientTest">
+      <div class = "col-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <text> "This is just what I needed. Hurray!" </text>
+            </div>
+            <div class="carousel-item">
+              <text> "Very qualified teachers at your disposal whenever and wherever you need them" </text>
+            </div>
+            <div class="carousel-item">
+              <text> "Jamani, huduma bora. Kila mtu asisite kuijaribu" </text>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class = "row readMoreWrapper">
+      <div id = "readMoreWrapper" class = "col-12">
+      	<button type="button" class="btn btn-primary">Read More</button>
+      </div>
+    </div>
+
+		<div class = "row  teacherCount">
+			<div class = "col-sm-2"> </div>
+
+			<div class = "col-sm-8 ">
+				<p>Over 200 teachers are registered with us</p>
+        <p class = "smallPar"> Join Us Today!! </p>
+				
+			  <div id = "wrapper">
+				  <button type="button" class="btn btn-primary">Start Teaching</button>
+			  </div>
+			</div>
+
+			<div class = "col-sm-2">
+			</div>
+		</div>
+
+    <div class = "row footer">
+      <div class = "col-lg-12">
+        <% include footer %>
+      </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+	
